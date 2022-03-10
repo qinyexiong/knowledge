@@ -526,8 +526,6 @@ Java语言规范第3版对volatile定义如下，Java允许线程访问共享变
 
 一个线程修改了一个对象的值，而另一个线程感知到了变化，然后进行相应的操作。
 
-#### ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)51.wait
-
 方法wait()的作用是使当前执行代码的线程进行等待，wait()是Object类通用的方法，该方法用来将当前线程置入“预执行队列”中，并在 wait()所在的代码处停止执行，直到接到通知或中断为止。
 
 在调用wait之前线程需要获得该对象的对象级别的锁。代码体现上，即只能是同步方法或同步代码块内。调用wait()后当前线程释放锁。
@@ -1101,13 +1099,5 @@ corePoolSize设置为0，maxmumPoolSize为Integer.MAX_VALUE。keepAliveTime为60
 
 一般来说它适合处理时间短、大量的任务。
 
-参考：
 
-- 《Java多线程编程核心技术》
-
-- 《Java高并发编程详解》
-
-- 《Java 并发编程的艺术》
-
-  ![WechatIMG360](https://gitee.com/yizhibuerdai/Imagetools/raw/master/images/common1.png)
 
